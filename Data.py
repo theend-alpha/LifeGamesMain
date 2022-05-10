@@ -4,18 +4,7 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hii !! There {}!! Nice to see ya here !
 
-Welcome to "{}" ! The bot of "[NayanTara](t.me/NotReallyNeon)" © 
-
-You're seeing this message because of there'll be some additions in this bot , which does not affect the previous world !
-
-Made with love ✨💫💕 for ya all !!
-
-Just enjoy my hard work ! 
-
-Regards ~ [NayanTara](t.me/NotReallyNeon)
-
-Click on below buttons to know more ! ❄️✨
+ʜɪɪ !! ᴛʜᴇʀᴇ {}!! ɴɪᴄᴇ ᴛᴏ sᴇᴇ ʏᴀ ʜᴇʀᴇ ! ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ "{}" ! ᴛʜᴇ ʙᴏᴛ ᴏғ "[ɴᴀʏᴀɴᴛᴀʀᴀ](t.me/NotReallyNeon)" ©\n\nʏᴏᴜ'ʀᴇ sᴇᴇɪɴɢ ᴛʜɪs ᴍᴇssᴀɢᴇ ʙᴇᴄᴀᴜsᴇ ᴏғ ᴛʜᴇʀᴇ'ʟʟ ʙᴇ sᴏᴍᴇ ᴀᴅᴅɪᴛɪᴏɴs ɪɴ ᴛʜɪs ʙᴏᴛ , ᴡʜɪᴄʜ ᴅᴏᴇs ɴᴏᴛ ᴀғғᴇᴄᴛ ᴛʜᴇ ᴘʀᴇᴠɪᴏᴜs ᴡᴏʀʟᴅ !\n\nᴍᴀᴅᴇ ᴡɪᴛʜ ʟᴏᴠᴇ ✨💫💕 ғᴏʀ ʏᴀ ᴀʟʟ !!\n\nᴊᴜsᴛ ᴇɴᴊᴏʏ ᴍʏ ʜᴀʀᴅ ᴡᴏʀᴋ !\n\nʀᴇɢᴀʀᴅs ~ [ɴᴀʏᴀɴᴛᴀʀᴀ](t.me/NotReallyNeon)\n\nᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴs ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ! ❄️✨
 
     """
