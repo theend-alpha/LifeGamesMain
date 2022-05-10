@@ -8,6 +8,10 @@ class Keshav:
          [InlineKeyboardButton("✨About Update💫", callback_data="cmda")],
          [InlineKeyboardButton("✨Credits💫", callback_data="credits")]
     ]
+    
+    home_button = [
+        [InlineKeyboardButton("✨Back🕊", callback_data="home")]
+    ]
 
 
     # aboutupdate
