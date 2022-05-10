@@ -4,12 +4,18 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}!! Nice to see ya here !
+Hii !! There {}!! Nice to see ya here !
 
-Welcome to {} Made by Alpha © 
+Welcome to "{}" ! The bot of "[NayanTara](t.me/NotReallyNeon)" © 
 
-End Version - end.2.0 ©
+You're seeing this message because of there'll be some additions in this bot , which does not affect the previous world !
 
-Last updated - 01/05/2022
+Made with love ✨💫💕 for ya all !!
+
+Just enjoy my hard work ! 
+
+Regards ~ [NayanTara](t.me/NotReallyNeon)
+
+Click on below buttons to know more ! ❄️✨
 
     """
