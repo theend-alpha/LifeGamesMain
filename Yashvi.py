@@ -6,7 +6,7 @@ class Keshav:
     #Alpha Buttons
     alpha_buttons = [
          [InlineKeyboardButton("✨About Update💫", callback_data="cmda")],
-         [InlineKeyboardButton(" Alphaversion ", callback_data="alphaversion")]
+         [InlineKeyboardButton("✨Credits💫", callback_data="credits")]
     ]
 
 
@@ -25,6 +25,20 @@ $_> No copyright will be present ! Coz this is going to made under personal repo
 $_> If you having cool thoughts about this : forward those to [him](t.me/NotReallyAlpha) ! © 
 
 $_> Thank you For visiting ! Have a good day .
+"""
+
+    # credits
+    CREDITS = """
+** Credits **
+
+~~> Algorithm for betting - [Hexa](t.me/Monocapped_Octahedron_xd)
+
+~~> In Law related commands - [Sherry](t.me/Creamy_02)
+
+~~> Owner - [NayanTara](t.me/NotReallyNeon)
+
+~~> Code by - [•](t.me/NotReallyAlpha)
+
 """
 
    
