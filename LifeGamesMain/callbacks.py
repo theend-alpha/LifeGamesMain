@@ -18,7 +18,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
                 message_id=message_id,
                 text=Data.START.format(callback_query.from_user.mention, mention),
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup(Keshav.home_button),
+                reply_markup=InlineKeyboardMarkup(Keshav.alpha_buttons),
             )
     elif query == "credits":
         chat_id = callback_query.from_user.id
