@@ -5,42 +5,26 @@ class Keshav:
    
     #Alpha Buttons
     alpha_buttons = [
-         [InlineKeyboardButton(" Commands ", callback_data="cmda")],
+         [InlineKeyboardButton("✨About Update💫", callback_data="cmda")],
          [InlineKeyboardButton(" Alphaversion ", callback_data="alphaversion")]
     ]
 
 
-    # Commands
+    # aboutupdate
     CMDA = """
-**Available commands in Alpha Bot**
+**Unofficial Extension By Alpha**
 
-/start    - To start the bot ✨💫
-/generate - To start string generation !
-/help     - To view the tutorial.
-/about    - Details to contact the developer !
+$_> Present version of life games is bored af , So going to add few more commands to add much fun !! 
 
+$_> You'll get to see this update soon ! , approx = 13th June 2021 
+
+$_> Personal and unofficial project by [Alpha](t.me/NotReallyAlpha)
+
+$_> No copyright will be present ! Coz this is going to made under personal repository of alpha ! 
+
+$_> If you having cool thoughts about this : forward those to [him](t.me/NotReallyAlpha) ! © 
+
+$_> Thank you For visiting ! Have a good day .
 """
 
-    # version
-    ALPHAVERSION = """
-**Alpha Version**
-
-$ Version Name    - end.2.0
-$ Version started - 01/05/2022
-$ Updated by      - [Alpha](t.me/NotReallyAlpha)
-
-**Updated features**
-
-$ Added "commands" button for new users !
-$ Added "Alpha Version" button !
-$ Bug fixes 
-
-**Upcoming update**
-
-$ you can see next update on 15/05/2022 !
-$ going to add cool pic : when the user starts the bot !
-
-_____
-$ If any suggestions  ••>>  [Alpha](t.me/NotReallyAlpha)
-
-"""
+   
