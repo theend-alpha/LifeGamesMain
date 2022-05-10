@@ -16,32 +16,17 @@ class Keshav:
 
     # aboutupdate
     CMDA = """
-**Unofficial Extension By Alpha**
+** ᴜɴᴏғғɪᴄɪᴀʟ ᴇxᴛᴇɴsɪᴏɴ ʙʏ ᴀʟᴘʜᴀ**
 
-$_> Present version of life games is bored af , So going to add few more commands to add much fun !! 
+$_> ᴘʀᴇsᴇɴᴛ ᴠᴇʀsɪᴏɴ ᴏғ ʟɪғᴇ ɢᴀᴍᴇs ɪs ʙᴏʀᴇᴅ ᴀғ , sᴏ ɢᴏɪɴɢ ᴛᴏ ᴀᴅᴅ ғᴇᴡ ᴍᴏʀᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴀᴅᴅ ᴍᴜᴄʜ ғᴜɴ !!\n\n$_> ʏᴏᴜ'ʟʟ ɢᴇᴛ ᴛᴏ sᴇᴇ ᴛʜɪs ᴜᴘᴅᴀᴛᴇ sᴏᴏɴ ! , ᴀᴘᴘʀᴏx = 𝟷𝟹ᴛʜ ᴊᴜɴᴇ 𝟸𝟶𝟸𝟷\n\n$_> ᴘᴇʀsᴏɴᴀʟ ᴀɴᴅ ᴜɴᴏғғɪᴄɪᴀʟ ᴘʀᴏᴊᴇᴄᴛ ʙʏ [ᴀʟᴘʜᴀ](ᴛ.ᴍᴇ/ɴᴏᴛʀᴇᴀʟʟʏᴀʟᴘʜᴀ)\n\n$_> ɴᴏ ᴄᴏᴘʏʀɪɢʜᴛ ᴡɪʟʟ ʙᴇ ᴘʀᴇsᴇɴᴛ ! ᴄᴏᴢ ᴛʜɪs ɪs ɢᴏɪɴɢ ᴛᴏ ᴍᴀᴅᴇ ᴜɴᴅᴇʀ ᴘᴇʀsᴏɴᴀʟ ʀᴇᴘᴏsɪᴛᴏʀʏ ᴏғ ᴀʟᴘʜᴀ !\n\n$_> ɪғ ʏᴏᴜ ʜᴀᴠɪɴɢ ᴄᴏᴏʟ ᴛʜᴏᴜɢʜᴛs ᴀʙᴏᴜᴛ ᴛʜɪs : ғᴏʀᴡᴀʀᴅ ᴛʜᴏsᴇ ᴛᴏ [ʜɪᴍ](ᴛ.ᴍᴇ/ɴᴏᴛʀᴇᴀʟʟʏᴀʟᴘʜᴀ) ! ©\n\n$_> ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ᴠɪsɪᴛɪɴɢ ! ʜᴀᴠᴇ ᴀ ɢᴏᴏᴅ ᴅᴀʏ .
 
-$_> You'll get to see this update soon ! , approx = 13th June 2021 
-
-$_> Personal and unofficial project by [Alpha](t.me/NotReallyAlpha)
-
-$_> No copyright will be present ! Coz this is going to made under personal repository of alpha ! 
-
-$_> If you having cool thoughts about this : forward those to [him](t.me/NotReallyAlpha) ! © 
-
-$_> Thank you For visiting ! Have a good day .
 """
 
     # credits
     CREDITS = """
-** Credits **
+** ᴄʀᴇᴅɪᴛs **
 
-~~> Algorithm for betting - [Hexa](t.me/Monocapped_Octahedron_xd)
-
-~~> In Law related commands - [Sherry](t.me/Creamy_02)
-
-~~> Owner - [NayanTara](t.me/NotReallyNeon)
-
-~~> Code by - [•](t.me/NotReallyAlpha)
+••> ᴀʟɢᴏʀɪᴛʜᴍ ғᴏʀ ʙᴇᴛᴛɪɴɢ - [ʜᴇxᴀ](t.me/Monocapped_Octahedron_xd)\n\n••> ɪɴ ʟᴀᴡ ʀᴇʟᴀᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅs - [sʜᴇʀʀʏ](t.me/Creamy_02)\n\n••> ᴏᴡɴᴇʀ - [ɴᴀʏᴀɴᴛᴀʀᴀ](t.me/NotReallyNeon)\n\n••> ᴄᴏᴅᴇ ʙʏ - [•](t.me/NotReallyAlpha)
 
 """
 
