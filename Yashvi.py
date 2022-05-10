@@ -5,8 +5,8 @@ class Keshav:
    
     #Alpha Buttons
     alpha_buttons = [
-         [InlineKeyboardButton("✨About Update💫", callback_data="cmda")],
-         [InlineKeyboardButton("✨Credits💫", callback_data="credits")]
+         [InlineKeyboardButton("✨ ᴀʙᴏᴜᴛ ᴜᴘᴅᴀᴛᴇ 💫", callback_data="cmda")],
+         [InlineKeyboardButton("✨ ᴄʀᴇᴅɪᴛs 💫", callback_data="credits")]
     ]
     
     home_button = [
