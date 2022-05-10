@@ -35,17 +35,17 @@
     "API_ID": {
       "description": "Get this value from my.telegram.org.",
       "required": true,
-      "value": ""
+      "value": "14151343"
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org.",
       "required": true,
-      "value": ""
+      "value": "9330f17086496c4580bdc8f8b24ec364"
     },
     "BOT_TOKEN": {
       "description": "Obtain a Telegram bot token by contacting @BotFather",
       "required": true,
-      "value": ""
+      "value": "5136527516:AAHZIvK4YJh96ZeHWmPcIwFWGZM9le2iOSw"
     }
   }
 }
