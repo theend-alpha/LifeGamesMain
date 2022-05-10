@@ -1,6 +1,7 @@
 from Data import Data
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
+from Yashvi import Keshav
 
 
 # Start Message
@@ -11,5 +12,5 @@ async def start(bot, msg):
 	await bot.send_message(
 		msg.chat.id,
 		Data.START.format(msg.from_user.mention, mention),
-		reply_markup=InlineKeyboardMarkup(Data.buttons)
+		reply_markup=InlineKeyboardMarkup(Keshav.alpha_buttons)
 	)
