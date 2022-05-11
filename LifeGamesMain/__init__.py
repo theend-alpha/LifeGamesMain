@@ -25,3 +25,5 @@ alf = Client(
     bot_token=BOT_TOKEN,
     workers=min(32, os.cpu_count() + 4),
 )
+
+LOGGER = logging.getLogger(__name__)
