@@ -17,6 +17,7 @@ from pyrogram import Client, errors
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
 from pyrogram.types import Chat, User
 from Config import API_ID, API_HASH, BOT_TOKEN
+
 alf = Client(
     ":memory:",
     api_id=API_ID,
