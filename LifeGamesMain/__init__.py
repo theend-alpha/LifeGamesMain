@@ -4,10 +4,6 @@ import sys
 import json
 import asyncio
 import time
-import telegram.ext as tg
-from inspect import getfullargspec
-from aiohttp import ClientSession
-from Python_ARQ import ARQ
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from telethon.sessions import MemorySession
