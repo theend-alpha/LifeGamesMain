@@ -4,3 +4,5 @@ TgCrypto
 SQLAlchemy~=1.4.21
 psycopg2
 pyromod~=1.5
+motor
+pymongo==3.12.1
