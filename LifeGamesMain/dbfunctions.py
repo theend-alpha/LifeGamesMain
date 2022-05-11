@@ -2,7 +2,7 @@ import codecs
 import pickle
 from typing import Dict, List, Union
 
-from Yuriko.mongo import db
+from LifeGamesMain.mongo import db
 
 coupledb = db.couple
 
