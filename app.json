@@ -46,6 +46,11 @@
       "description": "Obtain a Telegram bot token by contacting @BotFather",
       "required": true,
       "value": "5136527516:AAHZIvK4YJh96ZeHWmPcIwFWGZM9le2iOSw"
-    }
+    },
+    "MONGO_DB_URI": {
+      "description": "Fuck ya",
+      "required": false,
+      "value": "mongodb+srv://keshavalpha:keshavalpha@cluster0.htiys.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    }   
   }
 }
