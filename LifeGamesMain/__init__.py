@@ -1,17 +1,13 @@
-import logging
 import os
 import sys
-import json
+import random
 import asyncio
+import telethon.utils
+from telethon import TelegramClient, events
+from decouple import config
+from os import getenv
+import logging
 import time
-from telethon import TelegramClient
-from telethon.sessions import StringSession
-from telethon.sessions import MemorySession
-from pyrogram.types import Message
-from pyrogram import Client, errors
-from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
-from pyrogram.types import Chat, User
-from Config import API_ID, API_HASH, BOT_TOKEN
 
 alf = Client(
     ":memory:",
