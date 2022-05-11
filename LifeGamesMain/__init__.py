@@ -27,3 +27,6 @@ alf = Client(
 )
 
 LOGGER = logging.getLogger(__name__)
+
+
+MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
