@@ -13,3 +13,5 @@ from Config import API_ID, API_HASH, BOT_TOKEN
 Alf = TelegramClient('Alf', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 DB_URI = config("DATABASE_URL", None)
+
+CMD_HNDLR = getenv("CMD_HNDLR", default="/")
