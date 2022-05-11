@@ -1,6 +1,6 @@
 from LifeGamesMain import alf as app
 from LifeGamesMain.utils.errors import capture_err
-from dbfunctions import get_couple, save_couple
+from LifeGamesMain.dbfunctions import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
