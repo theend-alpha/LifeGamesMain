@@ -3,7 +3,7 @@ import sys
 from motor import motor_asyncio
 from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
-from Config import MONGO_DB_URI
+from LifeGamesMain import MONGO_DB_URI
 from LifeGamesMain.confing import get_int_key, get_str_key
 
 
