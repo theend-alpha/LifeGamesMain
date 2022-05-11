@@ -16,11 +16,11 @@ from pyrogram.types import Message
 from pyrogram import Client, errors
 from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
 from pyrogram.types import Chat, User
-
+from Config import API_ID, API_HASH, BOT_TOKEN
 alf = Client(
     ":memory:",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=TOKEN,
+    bot_token=BOT_TOKEN,
     workers=min(32, os.cpu_count() + 4),
 )
