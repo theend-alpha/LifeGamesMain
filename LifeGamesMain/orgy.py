@@ -26,4 +26,17 @@ if event.sender_id in OWNER_ID:
                  await event.reply("ᴜsᴇʀ ᴠᴇʀɪғɪᴇᴅ !")
 
 else:
-       await event.reply("vmro 😑😑")
+      await event.reply("vmro 😑😑")
+
+@Alf.on(events.NewMessage(incoming=True, pattern=r"\%srmsudo(?: |$(.*)" % hl))
+async def echo(event):
+if event.sender_id in OWNER_ID:
+     if event.reply_to_msg_id is not None:
+            reply_msg = await event.get_reply_message()
+            user_id = reply_msg.sender_id
+            chat_id = event.chat_id
+            if is_echo(user_id, chat_id):
+                remove_echo(user_id, chat_id)
+                await event.reply("Echo Has Been Stopped For The User ☑️")
+            else:
+                await event.reply("Echo Is Already Disabled !!")
