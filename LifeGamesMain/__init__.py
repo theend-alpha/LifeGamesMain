@@ -8,14 +8,9 @@ from decouple import config
 from os import getenv
 import logging
 import time
+from Config import API_ID, API_HASH, BOT_TOKEN
 
-alf = Client(
-    ":memory:",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-    workers=min(32, os.cpu_count() + 4),
-)
+Alf = TelegramClient('Alf', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
 LOGGER = logging.getLogger(__name__)
 
