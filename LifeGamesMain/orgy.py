@@ -9,3 +9,6 @@ from LifeGamesMain import Alf
 from LifeGamesMain.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 
 from LifeGamesMain import CMD_HNDLR as hl
+
+
+@Alf.on(events.NewMessage(incoming=True, pattern=r"\%sjoinorgy(?: |$)(.*)" % hl))
