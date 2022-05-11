@@ -12,7 +12,4 @@ from Config import API_ID, API_HASH, BOT_TOKEN
 
 Alf = TelegramClient('Alf', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-LOGGER = logging.getLogger(__name__)
-
-
-MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+DB_URI = config("DATABASE_URL", None)
