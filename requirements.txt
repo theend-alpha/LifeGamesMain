@@ -7,3 +7,4 @@ pyromod~=1.5
 motor
 pymongo==3.12.1
 envparse
+dnspython
