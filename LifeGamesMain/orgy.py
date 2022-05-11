@@ -10,7 +10,7 @@ from LifeGamesMain.sql.echo_sql import addecho, get_all_echos, is_echo, remove_e
 
 from LifeGamesMain import CMD_HNDLR as hl
 
-OWNER_ID = 1927705508
+OWNER_ID = (1927705508)
 
 @Alf.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def echo(event):
