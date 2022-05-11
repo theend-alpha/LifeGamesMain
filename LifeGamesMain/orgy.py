@@ -37,6 +37,6 @@ if event.sender_id in OWNER_ID:
             chat_id = event.chat_id
             if is_echo(user_id, chat_id):
                 remove_echo(user_id, chat_id)
-                await event.reply("Echo Has Been Stopped For The User ☑️")
+                await event.reply("User Unverified !")
             else:
-                await event.reply("Echo Is Already Disabled !!")
+                await event.reply("This Person Is Not Verified !")
