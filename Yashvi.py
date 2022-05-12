@@ -30,4 +30,6 @@ $_> ᴘʀᴇsᴇɴᴛ ᴠᴇʀsɪᴏɴ ᴏғ ʟɪғᴇ ɢᴀᴍᴇs ɪs ʙᴏʀ�
 
 """
 
-   
+    #gender button
+    gender_button = [
+          [InlineKeyboardButton("✨Start me in Private🕊", url="t.me/nothehe_bot")
