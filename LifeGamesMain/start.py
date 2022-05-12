@@ -18,7 +18,7 @@ async def start(bot, msg):
 
 
 @Client.on_message(
-    command("gender")
+      filters.command("gender")
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
