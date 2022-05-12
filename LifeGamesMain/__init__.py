@@ -15,6 +15,8 @@ from pyrogram.types import Chat, User
 
 LOGGER = logging.getLogger(__name__)
 
+MONGO_DB_URI = mongodb+srv://keshavalpha:keshavalpha@cluster0.htiys.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 alf = Client(
     ":memory:",
     api_id=API_ID,
