@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, Message
+from Yashvi import Keshav
 
 @Client.on_message(
       filters.command("gender")
@@ -9,5 +10,5 @@ from pyrogram.types import InlineKeyboardMarkup, Message
     & ~filters.via_bot
 )
 async def gender(_, message: Message):
-        await message.reply("Click [here](t.me/nothehe_bot) to change gender",
-                            disable_web_page_preview=True)
+        await message.reply("start bot --> settings --> gender ",
+                            reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
