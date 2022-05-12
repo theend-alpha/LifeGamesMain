@@ -15,15 +15,3 @@ async def start(bot, msg):
                 disable_web_page_preview=True,
 		reply_markup=InlineKeyboardMarkup(Keshav.alpha_buttons)
 	)
-
-
-@Client.on_message(
-      filters.command("gender")
-    & filters.group
-    & ~filters.edited
-    & ~filters.forwarded
-    & ~filters.via_bot
-)
-async def gender(_, message: Message):
-        await message.reply("Click [here](t.me/nothehe_bot) to change gender",
-                            disable_web_page_preview=True)
