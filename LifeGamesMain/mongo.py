@@ -1,3 +1,4 @@
+import os
 import asyncio
 import sys
 from motor import motor_asyncio
@@ -7,9 +8,9 @@ from LifeGamesMain import MONGO_DB_URI
 from LifeGamesMain.confing import get_int_key, get_str_key
 
 
-MONGO_PORT = get_int_key("MONGO_PORT")
+MONGO_PORT = os.environ.get("MONGO_PORT")
 MONGO_DB_URI = get_str_key("MONGO_DB_URI")
-MONGO_DB = "Alpha"
+MONGO_DB = os.environ.get("MONGO_DB")
 
 
 client = MongoClient()
