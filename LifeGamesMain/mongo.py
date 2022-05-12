@@ -8,9 +8,9 @@ from LifeGamesMain import MONGO_DB_URI
 from LifeGamesMain.confing import get_int_key, get_str_key
 
 
-MONGO_PORT = os.environ.get("MONGO_PORT")
+MONGO_PORT = get_int_key("17017")
 MONGO_DB_URI = get_str_key("MONGO_DB_URI")
-MONGO_DB = os.environ.get("MONGO_DB")
+MONGO_DB = "Alpha"
 
 
 client = MongoClient()
