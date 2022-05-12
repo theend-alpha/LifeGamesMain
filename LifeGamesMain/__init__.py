@@ -1,17 +1,13 @@
+import logging
 import os
 import sys
-import random
+import json
 import asyncio
-import telethon.utils
-from telethon import TelegramClient, events
-from decouple import config
-from os import getenv
-import logging
 import time
-from Config import API_ID, API_HASH, BOT_TOKEN
-
-Alf = TelegramClient('Alf', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-
-DB_URI = config("DATABASE_URL", None)
-
-CMD_HNDLR = getenv("CMD_HNDLR", default="/")
+from telethon import TelegramClient
+from telethon.sessions import StringSession
+from telethon.sessions import MemorySession
+from pyrogram.types import Message
+from pyrogram import Client, errors
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
+from pyrogram.types import Chat, User
