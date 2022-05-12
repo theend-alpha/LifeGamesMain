@@ -1,5 +1,5 @@
-from Yuriko import pbot as app
-from Yuriko.utils.errors import capture_err
+from LifeGamesMain import alf as app
+from LifeGamesMain.utils.errors import capture_err
 from Yuriko.ex_plugins.dbfunctions import get_couple, save_couple
 from pyrogram import filters
 import random
