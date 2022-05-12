@@ -11,7 +11,7 @@ async def start(bot, msg):
 	mention = user["mention"]
 	await bot.send_message(
 		msg.chat.id,
-		Data.START.format(msg.from_user.mention, mention),
+		Yashvi.Keshav.format(msg.from_user.mention, mention),
                 disable_web_page_preview=True,
 		reply_markup=InlineKeyboardMarkup(Keshav.alpha_buttons)
 	)
