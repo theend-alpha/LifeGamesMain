@@ -12,6 +12,8 @@ photo = "https://te.legra.ph/file/8c5b5e17d0fba139884d2.jpg"
     & ~filters.via_bot
 )
 async def gender(_, message: Message):
+        user = await bot.get_me()
+	mention = user["mention"]
         await _.send_photo(message.chat.id,
                            photo,
                            caption=Keshav.GENDER.format(message.from_user.mention),
@@ -26,6 +28,8 @@ async def gender(_, message: Message):
     & ~filters.via_bot
 )
 async def gendero(_, message: Message):
+        user = await bot.get_me()
+	mention = user["mention"]
         await _.send_photo(message.chat.id,
                            photo,
                            caption=Keshav.GENDER.format(message.from_user.mention),
