@@ -14,7 +14,7 @@ photo = "https://te.legra.ph/file/8c5b5e17d0fba139884d2.jpg"
 async def gender(_, message: Message):
         await _.send_photo(message.chat.id,
                            photo,
-                           caption=Keshav.GENDER,
+                           caption=Keshav.GENDER.format(message.from_user.mention),
                            reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
 
 
@@ -28,5 +28,5 @@ async def gender(_, message: Message):
 async def gendero(_, message: Message):
         await _.send_photo(message.chat.id,
                            photo,
-                           caption=Keshav.GENDER,
+                           caption=Keshav.GENDER.format(message.from_user.mention),
                            reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
