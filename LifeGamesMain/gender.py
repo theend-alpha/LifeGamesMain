@@ -29,7 +29,7 @@ async def gender(_, message: Message):
     & ~filters.via_bot
 )
 async def gendero(_, message: Message):
-user = await bot.get_me()
+   user = await bot.get_me()
    mention = user["mention"]
    await _.send_photo(
       message.chat.id,
