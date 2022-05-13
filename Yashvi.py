@@ -32,7 +32,7 @@ $_> ᴘʀᴇsᴇɴᴛ ᴠᴇʀsɪᴏɴ ᴏғ ʟɪғᴇ ɢᴀᴍᴇs ɪs ʙᴏʀ�
 
     #gender button
     gender_button = [
-          [InlineKeyboardButton("✨Start Bot🕊", url="t.me/nothehe_bot")]
+          [InlineKeyboardButton("✨ sᴛᴀʀᴛ ʙᴏᴛ 🕊", url="t.me/nothehe_bot")]
     ]
 
     #algo
