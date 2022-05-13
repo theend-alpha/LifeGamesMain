@@ -9,7 +9,7 @@ from Yashvi import Keshav
     & ~filters.forwarded
     & ~filters.via_bot
 )
-async def gender(_, message: Message):
+async def algo(_, message: Message):
         await message.reply(Keshav.ALGO,
                             reply_markup=InlineKeyboardMarkup(Keshav.hexa_button))
 
@@ -21,6 +21,6 @@ async def gender(_, message: Message):
     & ~filters.forwarded
     & ~filters.via_bot
 )
-async def gendero(_, message: Message):
+async def algoo(_, message: Message):
         await message.reply(Keshav.ALGO,
                             reply_markup=InlineKeyboardMarkup(Keshav.hexa_button))
