@@ -10,7 +10,8 @@ from Yashvi import Keshav
     & ~filters.via_bot
 )
 async def algo(_, message: Message):
-        await message.reply(Keshav.ALGO,
+        await message.reply(Keshav.ALGO.format(message.from_user.mention),
+                            disable_web_page_preview=True,
                             reply_markup=InlineKeyboardMarkup(Keshav.hexa_button))
 
 
@@ -22,5 +23,6 @@ async def algo(_, message: Message):
     & ~filters.via_bot
 )
 async def algoo(_, message: Message):
-        await message.reply(Keshav.ALGO,
+        await message.reply(Keshav.ALGO.format(message.from_user.mention),
+                            disable_web_page_preview=True,
                             reply_markup=InlineKeyboardMarkup(Keshav.hexa_button))
