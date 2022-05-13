@@ -2,6 +2,8 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 from Yashvi import Keshav
 
+photo = "https://te.legra.ph/file/8c5b5e17d0fba139884d2.jpg"
+
 @Client.on_message(
       filters.command("gender")
     & filters.group
@@ -10,8 +12,10 @@ from Yashvi import Keshav
     & ~filters.via_bot
 )
 async def gender(_, message: Message):
-        await message.reply("start bot --> settings --> gender ",
-                            reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
+        await _.send_photo(message.chat.id,
+                           photo,
+                           caption=Keshav.GENDER,
+                           reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
 
 
 @Client.on_message(
@@ -22,5 +26,7 @@ async def gender(_, message: Message):
     & ~filters.via_bot
 )
 async def gendero(_, message: Message):
-        await message.reply("start bot --> settings --> gender ",
-                            reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
+        await _.send_photo(message.chat.id,
+                           photo,
+                           caption=Keshav.GENDER,
+                           reply_markup=InlineKeyboardMarkup(Keshav.gender_button))
