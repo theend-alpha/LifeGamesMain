@@ -26,15 +26,3 @@ async def algoo(_, message: Message):
         await message.reply(Keshav.ALGO,
                             disable_web_page_preview=True,
                             reply_markup=InlineKeyboardMarkup(Keshav.hexa_button))
-
-@Client.on_message(
-      filters.text("Aalgorithm")
-    & filters.group
-    & ~filters.edited
-    & ~filters.forwarded
-    & ~filters.via_bot
-)
-async def algooo(_, message: Message):
-        await message.reply(Keshav.ALGO,
-                            disable_web_page_preview=True,
-                            reply_markup=InlineKeyboardMarkup(Keshav.hexa_button))
