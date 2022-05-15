@@ -3,6 +3,8 @@ from Yashvi import Keshav
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
+smooch = "https://te.legra.ph/file/2bd00c6b47f9f3a7bfe1d.jpg"
+
 @Client.on_callback_query()
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     user = await bot.get_me()
@@ -40,3 +42,11 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Keshav.home_button),
         )
+    elif query == "smooch":
+        chat_id = callback_query.from_user.id
+        await callback_query.message.reply_photo(smooch,
+            "Choose which type of session you needed !",
+            reply_markup=InlineKeyboardMarkup([[
+                InlineKeyboardButton("Pyrogram Session", callback_data="pyrogram"),
+                InlineKeyboardButton("Telethon Session", callback_data="telethon")
+            ]])
