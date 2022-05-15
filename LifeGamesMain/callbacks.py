@@ -3,6 +3,7 @@ from Yashvi import Keshav
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from Alone import AlphaIsAlone
+from smooch import target_id, bsdk_id
 
 smooch = "https://te.legra.ph/file/2bd00c6b47f9f3a7bfe1d.jpg"
 
@@ -45,9 +46,8 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "smooch":
         chat_id = callback_query.from_user.id
-        await callback_query.message.reply_photo(smooch,
-            caption=AlphaIsAlone.SMOOCHA.format(,
-            reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("Pyrogram Session", callback_data="pyrogram"),
-                InlineKeyboardButton("Telethon Session", callback_data="telethon")
-            ]])
+        if target_id == chat_id:
+            await callback_query.message.reply_photo(smooch,
+                                                     caption=AlphaIsAlone.SMOOCHA.format(message.reply_to_message.from_user.mention, message.from_user.mention))
+        
+             
