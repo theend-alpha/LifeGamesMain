@@ -17,3 +17,10 @@ class AlphaIsAlone:
           InlineKeyboardButton(" ❌ ", callback_data="reject")
           ]
     ]
+
+    #smooch accept
+    SMOOCHA = """
+
+{} accepted the kiss of {} .
+
+"""
