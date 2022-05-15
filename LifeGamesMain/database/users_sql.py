@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer
-from StringSessionBot.database import BASE, SESSION
+from LifeGamesMain.database import BASE, SESSION
 
 
 class Users(BASE):
