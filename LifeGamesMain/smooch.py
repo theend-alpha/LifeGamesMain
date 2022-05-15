@@ -16,7 +16,7 @@ async def info_func(_, message: Message):
     elif not message.reply_to_message and len(message.command) != 1:
         target_id = message.text.split(None, 1)[1]
 
-    bsdk_id = message.from_user.id
+    TARGET_ID = "target_id"
 
     user = await _.get_me()
     mention = user["mention"]
