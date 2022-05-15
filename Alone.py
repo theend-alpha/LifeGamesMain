@@ -12,6 +12,8 @@ class AlphaIsAlone:
 
     #smooch buttons
     smooch_buttons = [ 
-          [InlineKeyboardButton(" ✅ ", callback_data="smooch"),
-          [InlineKeyboardButton(" ❌ ", callback_data="reject")
+          [  
+          InlineKeyboardButton(" ✅ ", callback_data="smooch"),
+          InlineKeyboardButton(" ❌ ", callback_data="reject")
+          ]
     ]
