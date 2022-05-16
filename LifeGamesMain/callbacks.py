@@ -43,18 +43,4 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(Keshav.home_button),
         )
-    elif query == "smooch":
-        chat_id = callback_query.from_user.id
-        if message.reply_to_message.from_user.id == chat_id:
-            await callback_query.message.reply_photo(smooch,
-                                                     caption=AlphaIsAlone.SMOOCHA.format(message.reply_to_message.from_user.mention, message.from_user.mention))
-
-async def info_func(_, message: Message):
-    if message.reply_to_message:
-        target_id = message.reply_to_message.from_user.id
-    elif not message.reply_to_message and len(message.command) == 1:
-        target_id = message.from_user.id
-    elif not message.reply_to_message and len(message.command) != 1:
-        target_id = message.text.split(None, 1)[1]
-
-             
+    
