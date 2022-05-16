@@ -6,7 +6,7 @@ class AlphaIsAlone:
     #smooch msg
     SMOOCH = """
 
-💗{} wants to smooch {} ...
+💗{} wants to smooch {}...
 
 """
 
