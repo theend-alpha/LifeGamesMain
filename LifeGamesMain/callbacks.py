@@ -45,7 +45,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "smooch":
         chat_id = callback_query.from_user.id
-        if target_id == chat_id:
+        if message.reply_to_message.from_user.id == chat_id:
             await callback_query.message.reply_photo(smooch,
                                                      caption=AlphaIsAlone.SMOOCHA.format(message.reply_to_message.from_user.mention, message.from_user.mention))
 
