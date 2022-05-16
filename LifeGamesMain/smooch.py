@@ -40,9 +40,9 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
     mention = user["mention"]
     query = callback_query.data.lower()
    
-    if query == "credits":
+    if query == "smooch":
         chat_id = callback_query.from_user.id
-        message_id = callback_query.message.message_id
+        if TARGET_ID == chat_id
         await callback_query.message.reply_photo(smooch,
                                                  caption=AlphaIsAlone.SMOOCHA.format(message.reply_to_message.from_user.mention, message.from_user.mention))
            
