@@ -1,7 +1,7 @@
 import os
 
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardMarkup, Message, CallbackQuery
 from Alone import AlphaIsAlone
 
 
