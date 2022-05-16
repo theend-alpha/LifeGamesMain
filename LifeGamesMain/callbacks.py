@@ -2,9 +2,6 @@ from Data import Data
 from Yashvi import Keshav
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
-from Alone import AlphaIsAlone
-
-smooch = "https://te.legra.ph/file/2bd00c6b47f9f3a7bfe1d.jpg"
 
 @Client.on_callback_query()
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
