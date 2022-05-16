@@ -45,12 +45,8 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "smooch":
         await callback_query.message.reply_photo(smooch,
-            caption=AlphaIsAlone.SMOOCHA.format(message.reply_to_message.from_user.mention, message.from_user.mention))
+            caption=AlphaIsAlone.SMOOCHA)
     elif query == "reject":
         await callback_query.message.reply_photo(smooch,
-            caption=AlphaIsAlone.SMOOCHA.format(message.reply_to_message.from_user.mention, message.from_user.mention))
+            caption=AlphaIsAlone.SMOOCHA)
     
-async def info_func(_, message: Message):
-
-    user = await _.get_me()
-    mention = user["mention"]
