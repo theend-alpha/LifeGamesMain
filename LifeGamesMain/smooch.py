@@ -5,10 +5,16 @@ from telethon.tl.functions.users import GetFullUserRequest
 from Alone import AlphaIsAlone
 from pyrogram.types import InlineKeyboardMarkup, Message 
 
+async def start(_, message: Message):
+	user = await _.get_me()
+	mention = user["mention"]
+
+        
+
 @ALF.on(events.NewMessage(incoming=True, pattern="/smooch")
 async def smooch(event):
    await event.send_file(event.chat_id,
-                         caption=AlphaIsAlone.SMOOCH,
+                         caption=AlphaIsAlone.SMOOCH.format(message.from_user.mention, message.reply_to_message.from_user.mention),
                          reply_markup=InlineKeyboardMarkup(AlphaIsAlone.smooch_buttons))
 
 async def get_user(event):
