@@ -3,6 +3,7 @@ from telethon.tl.custom import button
 from LifeGamesMain import ALF
 from telethon.tl.functions.users import GetFullUserRequest
 from Alone import AlphaIsAlone
+from pyrogram.types import InlineKeyboardMarkup, Message 
 
 @ALF.on(events.NewMessage(incoming=True, pattern="/smooch")
 async def smooch(event):
