@@ -46,10 +46,19 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "smooch":
         chat_id = callback_query.from_user.id 
+        message_id = callback_query.message.message_id
         if chat_id in TARGET_ID:
             await callback_query.message.reply_photo(smooch,
                 caption=AlphaIsAlone.SMOOCHA)
-            await bot.edit_message_text("accepted!")
+            await bot.edit_message_text(
+                    chat_id=chat_id,
+                    message_id=message_id,
+                    text="accepted !")
     elif query == "reject":
-        await callback_query.message.reply_photo(caption="sed ! Rejected")
+        chat_id = callback_query.from_user.id 
+        message_id = callback_query.message.message_id
+        await bot.edit_message_text(
+                chat_id=chat_id,
+                message_id=message_id,
+                text="accepted !")
     
