@@ -3,6 +3,7 @@ from Yashvi import Keshav
 from pyrogram import Client
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from Alone import AlphaIsAlone
+from LifeGamesMain.smooch import TARGET_ID
 
 smooch = "https://te.legra.ph/file/2bd00c6b47f9f3a7bfe1d.jpg"
 
