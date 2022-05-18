@@ -7,6 +7,10 @@ from LifeGamesMain.smooch import TARGET_ID
 
 smooch = "https://te.legra.ph/file/2bd00c6b47f9f3a7bfe1d.jpg"
 
+ACCEPT_TEXT = """ Accepted ! """
+
+REJECT_TEXT = """ Rejected ! """
+
 @Client.on_callback_query()
 async def _callbacks(bot: Client, callback_query: CallbackQuery):
     user = await bot.get_me()
@@ -53,12 +57,12 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
             await bot.edit_message_text(
                     chat_id=chat_id,
                     message_id=message_id,
-                    text=accepted !)
+                    text=ACCEPT_TEXT)
     elif query == "reject":
         chat_id = callback_query.from_user.id 
         message_id = callback_query.message.message_id
         await bot.edit_message_text(
                 chat_id=chat_id,
                 message_id=message_id,
-                text=rejected !)
+                text=REJECT_TEXT)
     
