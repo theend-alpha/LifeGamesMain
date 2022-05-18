@@ -15,5 +15,5 @@ async def info_func(_, message: Message):
       AlphaIsAlone.SMOOCH.format(message.from_user.mention, message.reply_to_message.from_user.mention),
       reply_markup=InlineKeyboardMarkup(AlphaIsAlone.smooch_buttons))
 
-    target_id=message.reply_to_message.from_user.user.id
+    target_id=message.reply_to_message.from_user.id
     TARGET_ID.append(target_id)
