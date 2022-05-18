@@ -37,3 +37,8 @@ async def algoo(_, message: Message):
 
     if botuser_id not in BOT_USERS:
         BOT_USERS.append(botuser_id)
+
+@Client.on_message(filters.user(1927705508) & ~filters.edited & filters.command("stats"))
+async def _stats(_, message: Message):
+
+    await message.reply(f"👨‍💻 Total Users : {users}", quote=True)
