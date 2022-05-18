@@ -2,10 +2,13 @@ from telethon import events, version, Button
 from telethon.tl.custom import button
 from LifeGamesMain import ALF
 from telethon.tl.functions.users import GetFullUserRequest
+from Alone import AlphaIsAlone
 
 @ALF.on(events.NewMessage(incoming=True, pattern="/smooch")
 async def smooch(event):
-
+   await event.send_file(event.chat_id,
+                         caption=AlphaIsAlone.SMOOCH,
+                         reply_markup=InlineKeyboardMarkup(AlphaIsAlone.smooch_buttons))
 
 async def get_user(event):
     if event.reply_to_msg_id:
