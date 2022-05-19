@@ -6,7 +6,8 @@ OWNER_ID = [1927705508]
 V_ID = []
 
 @Client.on_message(
-      filters.command("addv")
+      filters.user(1927705508)
+    & filters.command("addv")
     & filters.group
     & ~filters.edited
     & ~filters.forwarded
