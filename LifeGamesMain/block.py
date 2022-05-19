@@ -18,8 +18,8 @@ async def addv(_, message: Message):
         target_id = message.reply_to_message.from_user.id
         alpha = await message.reply("""Adding...!""")
 
-        if target_id not in V_ID:
-        V_ID.append(target_id)
+            if target_id not in V_ID:
+            V_ID.append(target_id)
 
-        await message.reply(f"Verified {}".format(target_id))
-        await alpha.delete()
+            await message.reply(f"Verified {}".format(target_id))
+            await alpha.delete()
