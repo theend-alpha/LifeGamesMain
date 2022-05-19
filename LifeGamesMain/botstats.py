@@ -41,4 +41,4 @@ async def algoo(_, message: Message):
 @Client.on_message(filters.user(1927705508) & ~filters.edited & filters.command("stats"))
 async def _stats(_, message: Message):
 
-    await message.reply(f"👨‍💻 Total Users : {users}", quote=True)
+    await message.reply(f"👨‍💻 Total Users : {BOT_USERS}", quote=True)
