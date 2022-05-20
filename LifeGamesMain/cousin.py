@@ -6,13 +6,13 @@ async def cousin(_, message: Message):
     user = await _.get_me()
     mention = user["mention"]
 
-    {}_COUSINS_ID.format(message.from_user.id) = []
+    COUSINS_ID = []
 
     target_id = message.reply_to_message.from_user.id
 
-    if target_id not in {}_COUSINS_ID.format(message.from_user.id):
-        {}_COUSINS_ID.format(message.from_user.id).append(target_id)
-    hehe = {}_COUSINS_ID.format(message.from_user.id)
+    if target_id not in COUSINS_ID:
+        COUSINS_ID.append(target_id)
+    hehe = COUSINS_ID
 
 
 @Client.on_meesage(filters.command("mystatus") & filters.group & ~filters.forwarded & ~filters.via_bot)
