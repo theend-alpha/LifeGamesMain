@@ -3,23 +3,23 @@ from pyrogram.types import InlineKeyboardButton
 
 class AlphaIsAlone:
 
-    #smooch msg
-    SMOOCH = """
+    #tara msg
+    TARA = """
 
-💗{} wants to smooch {}...
+💗{} wants to kiss {}...
 
 """
 
-    #smooch buttons
-    smooch_buttons = [ 
+    #tara buttons
+    tara_buttons = [ 
           [  
-          InlineKeyboardButton(" ✅ ", callback_data="smooch"),
+          InlineKeyboardButton(" ✅ ", callback_data="tara"),
           InlineKeyboardButton(" ❌ ", callback_data="reject")
           ]
     ]
 
-    #smooch accept
-    SMOOCHA = """
+    #tara accept
+    TARAA = """
 
 {} accepted the kiss of {} .
 
