@@ -1,6 +1,6 @@
 from Alone import AlphaIsAlone
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardMarkup, Message, CallbackQuery
 
 @Client.on_message(filters.group & ~filters.edited & ~filters.forwarded & ~filters.via_bot & filters.command("tara"))
 async def start(bot, msg: Message):
@@ -12,3 +12,8 @@ async def start(bot, msg: Message):
                 disable_web_page_preview=True,
 		reply_markup=InlineKeyboardMarkup(AlphaIsAlone.tara_buttons)
 	)
+
+@Client.on_callback_query(filters.regex("reject"))
+async def rej(bot, query: CallbackQuery):
+    await query.msg.delete()
+
