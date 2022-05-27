@@ -24,3 +24,5 @@ async def acc(bot, query: CallbackQuery):
         await query.message.reply_photo(alpha,
             caption=AlphaIsAlone.TARAA.format(message.reply_to_message.from_user.id, message.from_user.id))    
 
+    else:
+        await query.answer("This is not for you !")
