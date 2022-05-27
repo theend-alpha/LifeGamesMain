@@ -6,6 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message, CallbackQuery
 async def start(bot, message: Message):
 	user = await bot.get_me()
 	mention = user["mention"]
+        target_id = message.reply_to_message.from_user.id
 	await bot.send_message(
 		message.chat.id,
 		AlphaIsAlone.TARA.format(msg.from_user.mention, message.reply_to_message.from_user.mention),
@@ -19,5 +20,7 @@ async def rej(bot, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("tara"))
 async def acc(bot, query: CallbackQuery):
-    
+    if query.from_user.id == target_id:
+        await query.message.reply_photo(alpha,
+            caption=AlphaIsAlone.TARAA.format(message.reply_to_message.from_user.id, message.from_user.id))    
 
