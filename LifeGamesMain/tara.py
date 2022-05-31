@@ -22,8 +22,9 @@ async def tara(_, message: Message):
 		AlphaIsAlone.TARA.format(message.from_user.mention, message.reply_to_message.from_user.mention),
 		disable_web_page_preview=True,
 		reply_markup=InlineKeyboardMarkup(AlphaIsAlone.tara_buttons))
-        except:
-            return
+	except:
+		return
+	
 		
 @Client.on_callback_query()
 async def taraback(client: Client, query: CallbackQuery):
@@ -35,3 +36,5 @@ async def taraback(client: Client, query: CallbackQuery):
 		elif query.data == "reject":
 			await query.message.delete()
 		
+		
+	
