@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 
 # kiss trail omfoo...
 
-@Client.on_message(filters.command("tara") & ~filters.via_bot & ~filters.group & ~filters.forwarded)
+@Client.on_message(filters.command("tara") & ~filters.via_bot & filters.group & ~filters.forwarded)
 async def tara(_, message: Message):
 	chat_id = message.chat.id
 	global omfoo
