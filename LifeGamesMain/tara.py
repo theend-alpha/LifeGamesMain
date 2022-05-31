@@ -1,6 +1,6 @@
 from Alone import AlphaIsAlone
 from pyrogram.types import InlineKeyboardMarkup, CallbackQuery, Message
-from pyrogram import Client
+from pyrogram import Client, filters
 
 # kiss trail omfoo...
 
