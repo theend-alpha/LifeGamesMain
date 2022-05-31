@@ -27,7 +27,7 @@ async def tara(_, message: Message):
 	
 		
 @Client.on_callback_query()
-async def taraback(client: Client, query: CallbackQuery):
+async def taraback(_: Client, query: CallbackQuery):
 	user_id = query.from_user.id
 	if target == user_id:
 		if query.data == "tara":
