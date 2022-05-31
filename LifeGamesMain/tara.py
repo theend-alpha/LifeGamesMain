@@ -27,14 +27,18 @@ async def tara(_, message: Message):
 	
 		
 @Client.on_callback_query()
-async def taraback(_: Client, query: CallbackQuery):
+async def taraback(client: Client, query: CallbackQuery):
 	user_id = query.from_user.id
-	if target == user_id:
-		if query.data == "tara":
+	if query.data == "tara":
+		if user_id == target:
 			await query.message.edit_text(f"{message.reply_to_message.from_user.mention} accepted the kiss of {message.from_user.mention}...")
 			
-		elif query.data == "reject":
+		else:
+			await query.answer("this is not for you !")
+			
+	elif query.data == "reject":
+		if user_id == target:
 			await query.message.delete()
-		
-		
-	
+			
+		else:
+			return
