@@ -2,6 +2,8 @@ from Alone import AlphaIsAlone
 from pyrogram.types import InlineKeyboardMarkup, CallbackQuery, Message
 from pyrogram import Client, filters
 
+alpha = "https://te.legra.ph/file/2154fc8d07f429b2eeef6.jpg"
+
 # kiss trail omfoo...
 
 @Client.on_message(filters.command("tara") & ~filters.via_bot & filters.group & ~filters.forwarded)
