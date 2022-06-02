@@ -1,4 +1,4 @@
-from EndAfk.AlphaDB.shipdb import get_couple, save_couple
+from LifeGamesMain.AlphaDB.shipdb import get_couple, save_couple
 from pyrogram import filters, Client
 import random
 from datetime import datetime
