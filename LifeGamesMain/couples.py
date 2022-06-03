@@ -49,8 +49,8 @@ while atime == reset_time:
 @Client.on_message(filters.command("couple") & ~filters.edited)
 async def couple(_, message):
 	if message.chat.type == "private":
-	await message.reply_text("Try this command in groups")
-	return
+	    await message.reply_text("Try this command in groups")
+	    return
 	
 	try:
 		chat_id = message.chat.id
