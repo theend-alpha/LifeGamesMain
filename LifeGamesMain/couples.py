@@ -1,29 +1,36 @@
 from LifeGamesMain.AlphaDB.shipdb import get_couple, save_couple
 from pyrogram import filters, Client
 import random
-from datetime import datetime
+from datetime import datetime as dt 
 
 
-def dt():
-    now = datetime.now()
-    dt_string = now.strftime("%d/%m/%Y %H:%M")
-    dt_list = dt_string.split(" ")
-    return dt_list
+a = dt.now()
+
+if a.minute >= 30 and a.hour < 18:
+	k = a.minute
+
+	atime = str(a.hour + 6) + ":" + str(k - 30)
 
 
-def dt_tom():
-    a = (
-        str(int(dt()[0].split("/")[0]) + 1)
-        + "/"
-        + dt()[0].split("/")[1]
-        + "/"
-        + dt()[0].split("/")[2]
-    )
-    return a
+elif a.minute >= 30 and a.hour >= 18:
+	k = a.minute
+	t = a.hour
+	
+	atime = str(t - 18) + ":" + str(k - 30)
+	
+	
+elif a.minute < 30 and a.hour < 19:
+	k = a.minute
+	t = a.hour
+	
+	atime = str(t + 5) + ":" + str(k + 30)
 
-
-today = str(dt()[0])
-tomorrow = str(dt_tom())
+	
+elif a.minute < 30 and a.hour >= 19:
+	k = a.minute
+	t = a.hour
+	
+	atime = str(t + 5 - 24) + ":" + str(k + 30)
 
 @Client.on_message(filters.command("couple") & ~filters.edited)
 async def couple(_, message):
