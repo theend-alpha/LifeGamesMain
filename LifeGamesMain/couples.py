@@ -52,7 +52,7 @@ async def couple(_, message):
 	    await message.reply_text("Try this command in groups")
 	    return
 	
-	try:
+        try:
 		chat_id = message.chat.id
 		if len(COUPLE_LIST) == 0:
 			for i in _.iter_chat_members(message.chat.id):
@@ -78,3 +78,5 @@ async def couple(_, message):
 			c_s_m = omfoo
 			
 			await _.send_message(message.chat.id, c_s_m)
+        except Exception as e:
+            await message.reply_text(f"Error : {e}")
