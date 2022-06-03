@@ -38,8 +38,8 @@ CHAT_LIST = []
 
 reset_time = "0" + ":" + "0"
 
-omfoo = f"""**Couple of the day:**
-{c1_mention} + {c2_mention} = ❤️
+OMFOO = """**Couple of the day:**
+{} + {} = ❤️
 __New couple of the day may be chosen at 12AM__"""
 
 while atime == reset_time:
@@ -64,7 +64,7 @@ async def couple(_, message):
 				c1_id = random.choice(CHAT_LIST)
 			c1_mention = (await _.get_users(c1_id)).mention
 			c2_mention = (await _.get_users(c2_id)).mention
-			c_s_m = omfoo
+			c_s_m = OMFOO.format(c1_mention, c2_mention)
 			
 			await _.send_message(message.chat.id, c_s_m)
 			COUPLE_LIST.append(c1_id)
@@ -75,7 +75,7 @@ async def couple(_, message):
 			c2_id = COUPLE_LIST[1]
 			c1_mention = (await _.get_users(c1_id)).mention
 			c2_mention = (await _.get_users(c2_id)).mention
-			c_s_m = omfoo
+			c_s_m = OMFOO.format(c1_mention, c2_mention)
 			
 			await _.send_message(message.chat.id, c_s_m) 	 
 	except Exception as e:
