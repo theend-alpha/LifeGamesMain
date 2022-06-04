@@ -38,9 +38,6 @@ CHAT_LIST = []
 
 reset_time = "0" + ":" + "0"
 
-OMFOO = """**Couple of the day:**
-{} + {} = ❤️
-__New couple of the day may be chosen at 12AM__"""
 
 while atime == reset_time:
 	COUPLE_LIST.clear()
