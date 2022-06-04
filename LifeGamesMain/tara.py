@@ -12,7 +12,7 @@ async def tara(_, message: Message):
     i_id = message.from_user.id
     f_id = message.reply_to_message.from_user.id
     i_m = (await _.get_users(i_id)).mention
-    f_m = (await _.get_users(j_id)).mention
+    f_m = (await _.get_users(f_id)).mention
     try:
         await _.send_message(message.chat.id,
                              AlphaIsAlone.TARA.format(i_m, f_m),
